@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8590664305899868215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8590664305899868213}
+  - component: {fileID: 753054256219006382}
+  m_Layer: 0
+  m_Name: DynamicLevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8590664305899868213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8590664305899868215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753054256219006382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8590664305899868215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9401cc0fa22d40f7b65fb5d45cb24e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mingateLength: 10
+  maxGateLength: 20
+  spawnFreezeLength: 0
+  gateBufferBetweenCoins: 0
+  spawnFreezeWidthBuffer: 1
+  gateSpawnables: []
+  <spawnableDataInformation>k__BackingField:
+  - seed: 1
+    minLevel: 1
+    maxLevel: 10
+    minLength: 150
+    maxLength: 160
+    startBuffer: 5
+    endBuffer: 2
+    obstaclesThatCanSpawned: []
+    enemies:
+    - {fileID: 7312647117824837748, guid: d330d6cec84a99e49aefe636c808afa2, type: 3}
+    gate: {fileID: 314387739941697089, guid: 11ad04d407719432489768e7d6728117, type: 3}
+    availableTerrainMaterial:
+    - {fileID: 2100000, guid: e2d13250d13954c7991517c511efc6be, type: 2}
+    currency: {fileID: 314387739941697089, guid: 7a5b6c820c7fd4280a780ff9470a7d84,
+      type: 3}
+    startLinePrefab: {fileID: 9058167489692496298, guid: 021e1ce6e148542ccaa52b42d50df7df,
+      type: 3}
+    endLinePrefab: {fileID: 8751349750269054652, guid: 32fa2c6232c2842b9ab5998a592d00bf,
+      type: 3}
+    coinPercentage: 0.782
+    enemyPercentage: 0.87
+    laneSkipPercentage: 0.198
+  <currentSpawnableDataInformation>k__BackingField:
+    seed: 0
+    minLevel: 0
+    maxLevel: 0
+    minLength: 0
+    maxLength: 0
+    startBuffer: 0
+    endBuffer: 0
+    obstaclesThatCanSpawned: []
+    enemies:
+    - {fileID: 919132149155446097, guid: a38f7b5b103d143b68ac7b651728e3ed, type: 3}
+    gate: {fileID: 314387739941697089, guid: 2f2797190b789dc49867813357e32164, type: 3}
+    availableTerrainMaterial: []
+    currency: {fileID: 314387739941697089, guid: 7a5b6c820c7fd4280a780ff9470a7d84,
+      type: 3}
+    startLinePrefab: {fileID: 9058167489692496298, guid: 021e1ce6e148542ccaa52b42d50df7df,
+      type: 3}
+    endLinePrefab: {fileID: 8751349750269054652, guid: 32fa2c6232c2842b9ab5998a592d00bf,
+      type: 3}
+    coinPercentage: 0.719
+    enemyPercentage: 0.445
+    laneSkipPercentage: 0.359
+  currentLevel: 0
+  spawnableObjects:
+    SpawnablePrefab: {fileID: 0}
+    Position: {x: 0, y: 0, z: 0}
+    EulerAngles: {x: 0, y: 0, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    SnapToGrid: 1
+  currentLevelDef:
+    LevelLength: 100
+    LevelLengthBufferStart: 5
+    LevelLengthBufferEnd: 5
+    LevelWidth: 5
+    LevelThickness: 0.1
+    SnapToGrid: 1
+    GridSize: 1
+    TerrainMaterial: {fileID: 0}
+    StartPrefab: {fileID: 0}
+    EndPrefab: {fileID: 0}
+    Spawnables: []
+  lanes: 3
+  totalLanes: 3
